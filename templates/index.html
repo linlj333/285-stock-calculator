@@ -1,0 +1,171 @@
+{#<html>#}
+{#    <head>#}
+{#        <title>Sample Web Form</title>#}
+{#       <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">#}
+{#        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTTOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWME1fgjwPGmkzs7" crossorigin="anonymous"> -->#}
+{#    </head>#}
+{#<body>#}
+{##}
+{#<h1>How old are you?</h1>#}
+{##}
+{#<form method="POST" action="/">#}
+{#   <div class = "form-group">#}
+{#    <input type="text" name="age">#}
+{#    </div>#}
+{#    <input class = "btn btn-primary" type="submit" value="submit">#}
+{#</form>#}
+{#</body>#}
+{#</html>#}
+{##}
+{#<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->#}
+
+<html>
+
+<head>
+<title>Font Family</title>
+<!-- for styling -->
+    <style>
+       .title{
+           margin-bottom:20px;
+           text-align:ceter;
+           width:300px;
+           color:purple;
+           border:solid black 5px;
+       }
+       input[type="button"]
+       {
+           background-color: white ;
+           color: black;
+           border: solid black 5px;
+           width:100%
+       }
+       input[type ="text"]
+       {
+           background-color: whitesmoke;
+           border: solid black 5px;
+           width: 100%;
+       }
+    </style>
+
+</head>
+
+<!-- <script>
+   function handler(){
+      console.log("hello");
+   }
+</script> -->
+
+<!-- create table -->
+<body>
+<form action= "/" method="POST">
+
+   <div class = "form-group">
+    <h1 style = "font-family:Times New Roman;">Stock Calculator</h1>
+<table border = "3">
+    <!-- <form onsubmit= "handler()" method = "get"> -->
+       <!-- <form action = "www.134782.4522.565:8080" method ="get" target = "_blank"> -->
+        <!-- url -->
+    <tr>
+        <td>Compute Your Profit</td>
+       </tr>
+    <tr>
+    <td> <label for ="symbol">Ticker Symbol:</label></td>
+    <td><input type = "text" name = "symbol"><br></td>
+       </tr>
+    <tr>
+    <td><label for = "allotment">Allotment:</label></td>
+    <td><input type = "text" name = "allotment"><br></td>
+       </tr>
+    <tr>
+    <td><label for = "finalSharePrice">Final Share Price:</label></td>
+    <td><input type = "text" name = "finalSharePrice"><br></td>
+       </tr>
+    <tr>
+    <td><label for = "sellCommission">Sell Commission:</label></td>
+    <td><input type = "text" name = "sellCommission"><br></td>
+       </tr>
+    <tr>
+    <td><label for = "iniSharePrice">Initial Share Price: </label></td>
+    <td><input type = "text" name = "iniSharePrice"><br></td>
+       </tr>
+    <tr>
+
+    <td><label for = "buyCommission">Buy Commission:</label></td>
+    <td><input type = "text" name = "buyCommission"><br></td>
+       </tr>
+    <tr>
+    <td><label for = "cgtr">Capital Gain Tax Rate(%):</label></td>
+    <td><input type = "text" name = "cgtr"><br></td>
+       </tr>
+
+
+
+    <!-- <td><button onclick="handler()" value = "Calculate">Calculate<br></td></tr></button> -->
+    <!-- <td><button type="submit" value = "Calculate">Calculate<br></td></tr></button>
+   </tr> -->
+{#    <tr>#}
+{#        <td>Profit Report: </td>#}
+{#       </tr>#}
+{#    <tr>#}
+{#        <td><label>Proceeds</label></td>#}
+{#        <td><output value ="proceeds"></output></td>#}
+{#    </tr>#}
+{##}
+{#    <tr>#}
+{#        <td><label>Cost</label></td>#}
+{#        <td><output value ="cost"></output></td>#}
+{#        </tr>#}
+{#    <tr>#}
+{#         <td>Cost Details:</td>#}
+{#        </tr>#}
+{#     <tr>#}
+{#        <td><label>Total Purchase Price</label></td>#}
+{#        <td><output value ="totalPurchasePrice"></output></td>#}
+{#        </tr>#}
+{#     <tr>#}
+{#          <td><label>Buy Commission</label></td>#}
+{#         <td><output value ="buyCommission"></output></td>#}
+{#          </tr>#}
+{#     <tr>#}
+{#        <td><label>Sell Commission</label></td>#}
+{#        <td><output value ="sellCommission"></output></td>#}
+{#        </tr>#}
+{#    <tr>#}
+{#       <td><label>Tax On Captial Gain</label></td>#}
+{#       <td><output value ="tapOncgtr"></output></td>#}
+{#       </tr>#}
+{#  <tr>#}
+{#        <td><label>Net Profit</label></td>#}
+{#        <td><output value ="netProfit"></output></td>#}
+{#        </tr>#}
+{# <tr>#}
+{#        <td><label>Return on Investment</label></td>#}
+{#        <td><output value ="returnOnInvestment"></output></td>#}
+{#        </tr>#}
+{# <tr>#}
+{#         <td><label>To break evern, final share price</label></td>#}
+{#          <td><output value ="breakEven"></output></td>#}
+{#          </tr>#}
+<tr>
+    <input class = "btn btn-primary" type ="submit" value="Calculate"><br>
+    <td><label>&nbsp;</label></td>
+    </tr>
+
+</table>
+   </div>
+ </form>
+</body>
+
+</head>
+</html>
+
+
+
+<!-- <form action=”” method=”POST”>
+      <label> Username </label>
+      <input type=”text” name=”username” value={{request.form.username}}>
+      <label> Password </label>
+      <input type=”password” name=”password” value={{request.form.password}}>
+
+      <button type=”submit”> Submit </button>
+   </form> -->
